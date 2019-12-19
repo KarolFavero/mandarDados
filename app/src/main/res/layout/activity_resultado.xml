@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23AAEE"
+    tools:context=".resultado">
+
+    <TextView
+        android:id="@+id/rotnome"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="284dp"
+        android:background="#FFFFFF"
+        android:text="Nome:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp" />
+
+    <TextView
+        android:id="@+id/rotEmail"
+        android:layout_width="58dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="295dp"
+        android:background="#FFFFFF"
+        android:text="Email:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/resultNome"
+        app:layout_constraintTop_toBottomOf="@+id/resultNome" />
+
+    <TextView
+        android:id="@+id/rotData"
+        android:layout_width="173dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="180dp"
+        android:background="#FFFFFF"
+        android:text="Data de Nascimento:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/resultEmail"
+        app:layout_constraintTop_toBottomOf="@+id/resultEmail" />
+
+    <TextView
+        android:id="@+id/rotTelefone"
+        android:layout_width="167dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="186dp"
+        android:background="#FFFFFF"
+        android:text="Número de Telefone:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultTelefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/resultData"
+        app:layout_constraintTop_toBottomOf="@+id/resultData" />
+
+    <TextView
+        android:id="@+id/rotMenssagem"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="244dp"
+        android:background="#FFFFFF"
+        android:text="Menssagem:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultMensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTelefone" />
+
+    <TextView
+        android:id="@+id/rotSenha"
+        android:layout_width="59dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="294dp"
+        android:background="#FFFFFF"
+        android:text="Senha:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultMensagem" />
+
+    <TextView
+        android:id="@+id/resultMensagem"
+        android:layout_width="302dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/rotSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rotMenssagem"
+        app:layout_constraintTop_toBottomOf="@+id/rotMenssagem" />
+
+    <TextView
+        android:id="@+id/resultTelefone"
+        android:layout_width="298dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/rotMenssagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rotTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/rotTelefone" />
+
+    <TextView
+        android:id="@+id/resultData"
+        android:layout_width="299dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/rotTelefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rotData"
+        app:layout_constraintTop_toBottomOf="@+id/rotData" />
+
+    <TextView
+        android:id="@+id/resultEmail"
+        android:layout_width="304dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="51dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/rotData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rotEmail"
+        app:layout_constraintTop_toBottomOf="@+id/rotEmail" />
+
+    <TextView
+        android:id="@+id/resultNome"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/rotEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rotnome"
+        app:layout_constraintTop_toBottomOf="@+id/rotnome" />
+
+    <Button
+        android:id="@+id/voltaPrimeira"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="proximaTela"
+        android:text="Voltar "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultSenha"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="199dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/voltaPrimeira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

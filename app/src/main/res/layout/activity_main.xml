@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23AAEE"
+    tools:context=".Formulario">
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="40dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/dataNasci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/dataNasci"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Data de Nascimento"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/telefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Numero de Telefone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dataNasci"
+        app:layout_constraintTop_toBottomOf="@+id/dataNasci" />
+
+    <EditText
+        android:id="@+id/mensagem"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Mensagem de Apresentação"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/telefone"
+        app:layout_constraintTop_toBottomOf="@+id/telefone" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="138dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Senha Numérica"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mensagem"
+        app:layout_constraintTop_toBottomOf="@+id/mensagem" />
+
+    <Button
+        android:id="@+id/segundaTela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="segundaTela"
+        android:text="Ir para a segunda tela"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="627dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
